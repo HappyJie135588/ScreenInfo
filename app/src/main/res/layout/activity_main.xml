@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huangjie.drawable_test.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tv_width"
+        style="@style/text1_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="宽:"/>
+
+    <TextView
+        android:id="@+id/tv_height"
+        style="@style/text1_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_width"
+        tools:text="高:"/>
+
+    <TextView
+        android:id="@+id/tv_density"
+        style="@style/text1_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_height"
+        tools:text="density = px / dp = dpi/160"/>
+
+    <TextView
+        android:id="@+id/tv_dpi"
+        style="@style/text1_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_density"
+        tools:text="dpi:"/>
+
+    <TextView
+        android:id="@+id/tv_ratio"
+        style="@style/text1_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dpi"
+        tools:text="w:h = "/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_ldpi"
+            style="@style/text1_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ldpi:120dpi      1dp = 0.75px        240x320"/>
+
+        <TextView
+            android:id="@+id/tv_mdpi"
+            style="@style/text1_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ldpi"
+            android:text="mdpi:160dpi      1dp = 1px        320x480"/>
+
+        <TextView
+            android:id="@+id/tv_hdpi"
+            style="@style/text1_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mdpi"
+            android:text="hdpi:240dpi      1dp = 1.5px        480x800"/>
+
+        <TextView
+            android:id="@+id/tv_xhdpi"
+            style="@style/text1_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_hdpi"
+            android:text="xhdpi:320dpi      1dp = 2px        720x1280"/>
+
+        <TextView
+            android:id="@+id/tv_xxhdpi"
+            style="@style/text1_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_xhdpi"
+            android:text="xxhdpi:480dpi      1dp = 3px        1080x1920"/>
+
+        <TextView
+            android:id="@+id/tv_xxxhdpi"
+            style="@style/text1_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_xxhdpi"
+            android:text="xxxhdpi:640dpi      1dp = 4px        2160x3840"/>
+    </RelativeLayout>
+
+</RelativeLayout>
